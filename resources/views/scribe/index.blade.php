@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Documentation</title>
+    <title>THE MEGA SHOP API</title>
 
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 
@@ -26,6 +26,7 @@
       </span>
 </a>
 <div class="tocify-wrapper">
+        <img src="img/logo.png" alt="logo" class="logo" style="padding-top: 10px;" width="230px"/>
                 <div class="lang-selector">
                             <a href="#" data-language-name="bash">bash</a>
                             <a href="#" data-language-name="javascript">javascript</a>
@@ -51,7 +52,7 @@
     <div class="dark-box"></div>
     <div class="content">
         <h1>Introduction</h1>
-<p>Welcome to our API documentation!</p>
+<p>Welcome to version 1 of THE MEGA SHOP API.</p>
 <aside>As you scroll, you'll see code examples for working with the API in different programming languages in the dark area to the right (or as part of the content on mobile), and you can switch the programming language of the examples with the tabs in the top right (or from the nav menu at the top left on mobile).</aside><h1>Authenticating requests</h1>
 <p>This API is not authenticated.</p><h1>Category Endpoints</h1>
 <p>APIs for Category Management</p>
@@ -295,8 +296,8 @@ fetch(url, {
 <pre><code class="language-json">{
     "variable": [],
     "info": {
-        "name": "mega-shop-api-laravel API",
-        "_postman_id": "7415223e-2d56-463d-9513-7a6100ede09e",
+        "name": "THE MEGA SHOP API",
+        "_postman_id": "6236e031-aca3-4c4d-8ea5-df0a1358f3e6",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -364,7 +365,7 @@ fetch(url, {
                     "response": []
                 },
                 {
-                    "name": "Display the specified resource.",
+                    "name": "GET Category",
                     "request": {
                         "url": {
                             "protocol": "http",

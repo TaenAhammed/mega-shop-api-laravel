@@ -85,7 +85,7 @@ return [
      * Text to place in the "Introduction" section, right after the `description`. Markdown and HTML are supported.
      */
     'intro_text' => <<<INTRO
-Welcome to our API documentation!
+Welcome to version 1 of THE MEGA SHOP API.
 
 <aside>As you scroll, you'll see code examples for working with the API in different programming languages in the dark area to the right (or as part of the content on mobile), and you can switch the programming language of the examples with the tabs in the top right (or from the nav menu at the top left on mobile).</aside>
 INTRO,
@@ -113,7 +113,7 @@ INTRO,
      * The HTML <title> for the generated documentation, and the name of the generated Postman collection.
      * If this is null, Scribe will infer it from config('app.name').
      */
-    'title' => null,
+    'title' => 'THE MEGA SHOP API',
 
     'description' => '',
 
@@ -167,7 +167,7 @@ INTRO,
      * - 'logo' => 'img/logo.png' // for `laravel` type
      *
      */
-    'logo' => false,
+    'logo' => 'img/logo.png',
 
     /*
      * The router your API is using (Laravel or Dingo).

@@ -41,8 +41,8 @@ fetch(url, {
 {
     "variable": [],
     "info": {
-        "name": "mega-shop-api-laravel API",
-        "_postman_id": "7415223e-2d56-463d-9513-7a6100ede09e",
+        "name": "THE MEGA SHOP API",
+        "_postman_id": "6236e031-aca3-4c4d-8ea5-df0a1358f3e6",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -110,7 +110,7 @@ fetch(url, {
                     "response": []
                 },
                 {
-                    "name": "Display the specified resource.",
+                    "name": "GET Category",
                     "request": {
                         "url": {
                             "protocol": "http",
