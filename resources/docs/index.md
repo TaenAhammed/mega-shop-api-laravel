@@ -4,6 +4,8 @@ title: THE MEGA SHOP API
 language_tabs:
 - bash
 - javascript
+- php
+- python
 
 includes:
 - "./prepend.md"

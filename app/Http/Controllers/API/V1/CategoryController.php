@@ -7,12 +7,35 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
+/**
+ * @group Category Endpoints
+ *  
+ * APIs for Category Management
+ */
 class CategoryController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * GET Category List
      *
-     * @return \Illuminate\Http\Response
+     * @response
+     * 
+     * [
+     *      {
+     *          "id": 1,
+     *          "name": "Men's Fashion",
+     *          "is_active": 1,
+     *          "created_at": "2020-09-20T06:56:21.000000Z",
+     *          "updated_at": "2020-09-20T06:56:21.000000Z"
+     *      },
+     *      {
+     *          "id": 1,
+     *          "name": "Kids & Babies",
+     *          "is_active": 0,
+     *          "created_at": "2020-09-20T06:56:21.000000Z",
+     *          "updated_at": "2020-09-20T06:56:21.000000Z"
+     *      }
+     * ]
+     * 
      */
     public function index()
     {
@@ -21,6 +44,22 @@ class CategoryController extends Controller
         return response()->json($categories);
     }
 
+    /**
+     * GET Active Category List
+     *
+     * @response
+     * 
+     * [
+     *      {
+     *          "id": 1,
+     *          "name": "Men's Fashion",
+     *          "is_active": 1,
+     *          "created_at": "2020-09-20T06:56:21.000000Z",
+     *          "updated_at": "2020-09-20T06:56:21.000000Z"
+     *      }
+     * ]
+     * 
+     */
     public function activeCategories()
     {
         $categories = Category::where('is_active', true)->get();
@@ -29,10 +68,29 @@ class CategoryController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * POST Category
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @request
+     * 
+     * [
+     *      {
+     *          "name": "Men's Fashion",
+     *          "is_active": 1
+     *      }
+     * ]
+     *
+     * @response
+     * 
+     * [
+     *      {
+     *          "id": 1,
+     *          "name": "Men's Fashion",
+     *          "is_active": 1,
+     *          "created_at": "2020-09-20T06:56:21.000000Z",
+     *          "updated_at": "2020-09-20T06:56:21.000000Z"
+     *      }
+     * ]
+     * 
      */
     public function store(Request $request)
     {
@@ -47,10 +105,18 @@ class CategoryController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * GET Category
      *
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
+     * @response
+     * 
+     * {
+     *     "id": 1,
+     *     "name": "Men's Fashion",
+     *     "is_active": 1,
+     *     "created_at": "2020-09-20T06:56:21.000000Z",
+     *     "updated_at": "2020-09-20T06:56:21.000000Z"
+     * }
+     * 
      */
     public function show($id)
     {
