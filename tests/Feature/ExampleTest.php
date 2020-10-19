@@ -8,14 +8,11 @@ use Tests\TestCase;
 class ExampleTest extends TestCase
 {
     /**
-     * A basic test example.
-     *
-     * @return void
+     * @test
      */
-    public function testBasicTest()
+    public function can_create_a_category()
     {
-        $response = $this->get('/');
-
-        $response->assertStatus(200);
+        $response = $this->postJson('/api/v1/categories', []);
+        $response->assertStatus(201);
     }
 }
